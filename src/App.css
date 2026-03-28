@@ -58,6 +58,7 @@ textarea {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -69,6 +70,7 @@ textarea {
     opacity: 0;
     transform: translateX(24px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -80,6 +82,7 @@ textarea {
     opacity: 1;
     transform: translateX(0);
   }
+
   to {
     opacity: 0;
     transform: translateX(-24px);
@@ -91,6 +94,7 @@ textarea {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -98,14 +102,17 @@ textarea {
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   20%,
   60% {
     transform: translateX(-4px);
   }
+
   40%,
   80% {
     transform: translateX(4px);
@@ -113,11 +120,11 @@ textarea {
 }
 
 .shell {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 32px 16px 80px;
+  align-items: center;
+  /* padding: 32px 16px 80px; */
   background: var(--bg);
 }
 
@@ -488,6 +495,7 @@ textarea {
   background: #f0f3fa;
   color: var(--navy);
 }
+
 .act-btn.del {
   color: var(--red);
 }
