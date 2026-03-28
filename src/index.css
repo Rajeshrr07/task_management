@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy:        #1a3a6b;
+  --navy-dark:   #122d56;
+  --navy-light:  #2952a3;
+  --navy-hover:  #1e4499;
+  --orange:      #f5a623;
+  --orange-bg:   #fff3e0;
+  --green:       #27ae60;
+  --green-bg:    #e6f9ef;
+  --gray:        #8e99ad;
+  --gray-bg:     #eaf0ff;
+  --red:         #e74c3c;
+
+  --bg:          #f0f2f7;
+  --card:        #ffffff;
+  --border:      #dde3f0;
+  --border-focus:#2952a3;
+  --input-bg:    #ffffff;
+
+  --text-1:      #1a2540;
+  --text-2:      #5a6480;
+  --text-3:      #9aa3b8;
+
+  --shadow-sm:   0 1px 4px rgba(26,58,107,0.08);
+  --shadow-md:   0 4px 16px rgba(26,58,107,0.12);
+  --shadow-lg:   0 8px 32px rgba(26,58,107,0.18);
+
+  --radius:      10px;
+  --radius-sm:   6px;
+  --font:        'DM Sans', sans-serif;
+  --mono:        'DM Mono', monospace;
+
+  --transition:  0.18s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: var(--font);
+}
+
+/* ── Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* ── Animations ────────────────────────────── */
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideOutLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-24px); }
+}
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60%  { transform: translateX(-4px); }
+  40%,80%  { transform: translateX(4px); }
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50%      { transform: scale(1.15); }
+}
